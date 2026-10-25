@@ -1,0 +1,9 @@
+
+title: MLBB Patch Explorer
+description: MLBB patch notes, hero changes, builds and meta analysis
+markdown: kramdown
+permalink: /:categories/:title/
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name/
