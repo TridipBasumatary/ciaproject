@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | MLBB Patch Explorer</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <a href="{{ '/' | relative_url }}">⚔ MLBB PATCH EXPLORER</a>
+  </header>
+
+  <main class="wrap">
+    <p><a href="{{ '/' | relative_url }}">← Back to homepage</a></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}
+      <p>Published: {{ page.date | date: "%d %B %Y" }}</p>
+    {% endif %}
+    <article>
+      {{ content }}
+    </article>
+  </main>
+</body>
+</html>
